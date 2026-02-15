@@ -1,6 +1,4 @@
-from pathlib import Path
-
-html_content = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -117,7 +115,7 @@ html_content = """<!DOCTYPE html>
 <header>
   <h1 id="name">Hasan Turhan</h1>
   <p id="role">
-    Software Engineering Student | Seeking a Mandatory Summer 2026 Internship in Germany<br>
+    Software Engineering Student | Seeking a Summer 2026 Mandatory Internship in Germany<br>
     (Availability: 22.06.2026 – 08.09.2026)
   </p>
 
@@ -138,7 +136,7 @@ html_content = """<!DOCTYPE html>
   <h2 id="aboutTitle">About Me</h2>
 
   <p id="aboutText">
-    I am a 3rd-year Software Engineering student at Malatya Turgut Özal University (GPA: 3.25/4.0), seeking a Summer 2026 internship in Germany (Availability: 22.06.2026 – 08.09.2026).
+    I am a 3rd-year Software Engineering student at Malatya Turgut Özal University (GPA: 3.25/4.0), seeking a Summer 2026 mandatory internship in Germany (Availability: 22.06.2026 – 08.09.2026).
     I focus on developing clean, maintainable, and user-oriented software solutions.
     I have hands-on experience in Android development, backend fundamentals, and modern web technologies using Kotlin, Java, Python, SQL, and Git.
     My objective is to gain practical international experience, contribute effectively to a development team, and further strengthen my software engineering and problem-solving skills in a professional environment.
@@ -212,7 +210,7 @@ html_content = """<!DOCTYPE html>
       document.querySelector('.lang-btn').innerText = 'EN';
 
       document.getElementById('role').innerHTML =
-        'Software-Engineering-Student | Praktikum Sommer 2026 in Deutschland<br>' +
+        'Software-Engineering-Student | Pflichtpraktikum Sommer 2026 in Deutschland<br>' +
         '(Verfügbarkeit: 22.06.2026 – 08.09.2026)';
 
       document.getElementById('contactBtn').innerText = 'Kontakt';
@@ -267,9 +265,3 @@ html_content = """<!DOCTYPE html>
 
 </body>
 </html>
-"""
-
-file_path = Path("/mnt/data/index.html")
-file_path.write_text(html_content, encoding="utf-8")
-
-file_path
